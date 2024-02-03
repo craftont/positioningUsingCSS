@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning with CSS</title>
+</head>
+<body>
+    
+    <nav>
+        <div class="logo"></div>
+    </nav>
+
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    <footer>
+        <h1>Copyright 2024</h1>
+    </footer>
+
+    <style>
+
+    nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 80px;
+        background-color: white;
+        border-bottom: 2px solid black;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+    }
+
+    .logo {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 80px;
+        height: 80px;
+        background-color: black;
+    }
+
+    .container {
+        height: 800px;
+        background-color: grey;
+    }
+
+    .box {
+        width: 200px;
+        height: 200px;
+        background-color: white;
+        margin: 20px;
+    }
+    
+    footer {
+        z-index: 1;
+        bottom: 0;
+        width: 100%;
+        height: 80px;
+        background-color: white;
+        border-top: 2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    </style>
+
+</body>
+</html>
